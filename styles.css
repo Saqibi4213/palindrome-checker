@@ -5,19 +5,19 @@
 }
 
 body {
-  font-family:  cursive, sans-serif;
+  font-family: cursive, sans-serif;
   background-color: #0f3d5cf8;
   color: #1f0505;
 }
 
 .container {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title {
@@ -28,8 +28,8 @@ body {
 }
 
 .palindrome-div {
-  width: min(100vw, 450px);
-  min-height: 100px;
+  width: 500px;
+  min-height: 200px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -74,7 +74,7 @@ label {
 .palindrome-input::placeholder {
   text-align: center;
 }
- 
+
 .user-input {
   font-size: 1.4rem;
   margin-top: 10px;
@@ -93,9 +93,9 @@ label {
 }
 
 .palindrome-definition-div {
-  width: min(100vw, 450px);
+  width: 500px;
   font-size: 1.3rem;
-  min-height: 140px;
+  min-height: 200px;
   background-color: #057d92b4;
   margin-top: 20px;
   padding: 20px;
