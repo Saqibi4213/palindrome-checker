@@ -5,7 +5,7 @@ This project is a Palindrome Checker web application. It includes an HTML form w
 
 ## Demo 📸
 ![Demo](./img/palindrome-checker.png)
-
+![Demo] (./img/palindrome.png)
 ## Technologies Used 🛠️
 - HTML
 - CSS
