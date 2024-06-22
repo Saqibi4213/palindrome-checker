@@ -12,8 +12,8 @@ const checkForPalindrome = (input) => {
   resultDiv.replaceChildren();
 
   const lowerCaseStr = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
-  let resultMsg = `<strong>${originalInput}</strong> ${
-    lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
+  const resultMsg = `<strong>${originalInput}</strong> ${
+  lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
   } a palindrome.`;
 
   const pTag = document.createElement('p');
@@ -28,7 +28,7 @@ checkPalindromeBtn.addEventListener('click', () => {
   userInput.value = '';
 });
 
-userInput.addEventListener('keydown', e => {
+userInput.addEventListener('keydown',(e)=> {
   if (e.key === 'Enter') {
     checkForPalindrome(userInput.value);
     userInput.value = '';
