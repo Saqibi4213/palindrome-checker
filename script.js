@@ -5,16 +5,12 @@ const resultDiv = document.getElementById('result');
 const checkForPalindrome = (input) => {
   const originalInput = (input);
 
-  resultDiv.replaceChildren();
-  if (input === '') {
-    errorMsg.className = 'error';
-    errorMsg.textContent = 'Please input a value'
-    resultDiv.appendChildren();
-    resultDiv.classList.remove('hidden');
-    alert('Please input a value');
-    return;
+  if(userInput.trim().lenght===0){
+      alert("Please input a value");
+
   }
 
+  resultDiv.replaceChildren();
   const lowerCaseStr = input.replace(/[^A-Za-z0-9]/gi, '').toLowerCase();
   const resultMsg = `<strong>${originalInput}</strong> ${
     lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
