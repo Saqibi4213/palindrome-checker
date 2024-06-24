@@ -4,8 +4,6 @@ const resultDiv = document.getElementById('result');
 
 const checkForPalindrome = (input) => {
   const originalInput = (input);
-
-  
   if (input === '') {
     return;
   }
