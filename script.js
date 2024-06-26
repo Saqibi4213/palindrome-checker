@@ -2,7 +2,9 @@ const userInput = document.getElementById('text-input');
 const checkPalindromeBtn = document.getElementById('check-btn');
 const resultDiv = document.getElementById('result');
 const checkForPalindrome = (input) => {
+  const originalInput = (input);
   if (input === '') {
+    // eslint-disable-next-line-no-alert
     alert('Please input a value');
     return;
   }
@@ -11,7 +13,6 @@ const checkForPalindrome = (input) => {
   const resultMsg = `<strong>${originalInput}</strong> ${
     lowerCaseStr === [...lowerCaseStr].reverse().join('') ? 'is' : 'is not'
   } a palindrome.`;
-
   const pTag = document.createElement('p');
   pTag.className = 'user-input';
   pTag.innerHTML = resultMsg;
