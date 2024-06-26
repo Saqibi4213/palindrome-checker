@@ -2,9 +2,12 @@ const userInput = document.getElementById('text-input');
 const checkPalindromeBtn = document.getElementById('check-btn');
 const resultDiv = document.getElementById('result');
 
-const checkForPalindrome = (input) => {
-  const originalInput = (input);
+document.getElementById('check-btn').addEventListener('click', () => {
+  const textInput = document.getElementById('text-input').value;
+  const resultElement = document.getElementById('result');
+
   if (input === '') {
+    alert('Please input a value');
     return;
   }
   resultDiv.replaceChildren();
@@ -18,7 +21,7 @@ const checkForPalindrome = (input) => {
   pTag.innerHTML = resultMsg;
   resultDiv.appendChild(pTag);
   resultDiv.classList.remove('hidden');
-};
+});
 
 checkPalindromeBtn.addEventListener('click', () => {
   checkForPalindrome(userInput.value);
