@@ -130,3 +130,159 @@ label {
     padding: 15px;
   }
 }
+
+@media (max-width: 500px) and (min-width: 401px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .palindrome-btn {
+    width: 70px;
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-input {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .user-input {
+    font-size: 1.2rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .palindrome-btn {
+    width: 70px;
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-input {
+    width: 180px;
+    font-size: 0.9rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 1em;
+    padding: 2px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .user-input {
+    font-size: 1.2rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 300px) and (min-width: 201px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .palindrome-btn {
+    width: 60px;
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+
+  .palindrome-input {
+    width: 150px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .user-input {
+    font-size: 1rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .palindrome-btn {
+    width: 40px;
+    padding: 4px;
+    font-size: 0.5rem;
+  }
+
+  .palindrome-input {
+    width: 80px;
+    font-size: 0.5rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 3px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 3px;
+  }
+
+  .user-input {
+    font-size: 0.6rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.6;
+  }
+}
