@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive, sans-serif;
+  background-color: #0f3d5cf8;
+  color: #1f0505;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.palindrome-div {
+  width: 500px;
+  min-height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: rgba(119, 113, 113, 0.356);
+  box-shadow: 0 6px 6px #0dd4dbdc;
+}
+
+label {
+  color: #1f0505;
+  margin-bottom: 20px;
+}
+
+.palindrome-btn {
+  width: 90px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #0dd4db56;
+  color: #fff;
+  cursor: pointer;
+}
+
+.palindrome-input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #05a005;
+  border-radius: 18px;
+}
+
+.palindrome-input:focus {
+  border-bottom: 3px solid #03a032;
+}
+
+.palindrome-input::placeholder {
+  text-align: center;
+}
+
+.user-input {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.results-div {
+  overflow-y: auto;
+  word-wrap: break-word;
+  min-height: 50px;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.palindrome-definition-div {
+  width: 500px;
+  font-size: 1.3rem;
+  min-height: 200px;
+  background-color: #057d92b4;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.palindrome-definition {
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .palindrome-btn {
+    width: 80px;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .palindrome-input {
+    font-size: 1rem;
+  }
+
+  .palindrome-definition-div {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 401px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .palindrome-btn {
+    width: 70px;
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-input {
+    width: 200px;
+    font-size: 0.9rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .user-input {
+    font-size: 1.2rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .palindrome-btn {
+    width: 70px;
+    padding: 7px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-input {
+    width: 180px;
+    font-size: 0.9rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 1em;
+    padding: 2px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .user-input {
+    font-size: 1.2rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 300px) and (min-width: 201px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .palindrome-btn {
+    width: 60px;
+    padding: 6px;
+    font-size: 0.7rem;
+  }
+
+  .palindrome-input {
+    width: 150px;
+    font-size: 0.8rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .user-input {
+    font-size: 1rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .palindrome-btn {
+    width: 40px;
+    padding: 4px;
+    font-size: 0.5rem;
+  }
+
+  .palindrome-input {
+    width: 80px;
+    font-size: 0.5rem;
+  }
+
+  .palindrome-definition-div {
+    width: 100%;
+    font-size: 0.5rem;
+    padding: 3px;
+  }
+
+  .palindrome-div {
+    width: 100%;
+    padding: 3px;
+  }
+
+  .user-input {
+    font-size: 0.6rem;
+  }
+
+  .results-div {
+    width: 100%;
+  }
+
+  label {
+    font-size: 0.6rem;
+  }
+}
